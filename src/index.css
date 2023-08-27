@@ -1,13 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Times New Roman", Times, serif;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aquamarine;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main1 {
+  background-color: aquamarine;
+}
+.header {
+  background-color: blueviolet;
+  text-align: center;
+  font-size: 5rem;
+ 
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+  font-size: 5rem;
+}
+.element {
+  margin-left: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: black;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color:silver ;
+  cursor: pointer;
+  color:white
+}
+.score{
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.score button{
+  color: white;
+  background-color: black;
+  border-style: solid;
+  border-radius: 1rem;
+  border-color:silver ;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Default styles */
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; /* Adjust font size for smaller screens */
+  }
+
+  .header {
+    font-size: 3rem; /* Adjust header font size for smaller screens */
+  }
+
+  main {
+    margin-top: 8rem; /* Adjust margin for main content on smaller screens */
+  }
+
+  .element {
+    margin-left: 2rem; /* Adjust margin for elements on smaller screens */
+  }
+
+  .score {
+    font-size: 2rem; /* Adjust font size for scores on smaller screens */
+  }
+
+  .score button {
+    margin-top: 1rem; /* Adjust margin for score buttons on smaller screens */
+    font-size: 1.5rem; /* Adjust font size for score buttons on smaller screens */
+  }
 }
