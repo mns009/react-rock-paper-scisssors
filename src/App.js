@@ -54,6 +54,10 @@ function App() {
   //   handleClick();
   //   a();
   //  },[])
+   useEffect(function a(){
+    handleClick();
+    a();
+   },[])
 
   return (
     <div className="main1">
@@ -65,3 +69,6 @@ function App() {
 }
 
 export default App;
+
+
+
